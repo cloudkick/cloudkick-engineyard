@@ -6,7 +6,9 @@ EAPI="2"
 
 DESCRIPTION="The Cloudkick monitoring agent"
 HOMEPAGE="http://cloudkick.com/"
-SRC_URI="http://packages.cloudkick.com/releases/${PN}/binaries/${PN}-engineyard-${PV}_i386.tar.gz"
+SRC_URI="
+    x86?    ( http://packages.cloudkick.com/releases/${PN}/binaries/${PN}-engineyard-${PV}_i386.tar.gz )
+    amd64?	( http://packages.cloudkick.com/releases/${PN}/binaries/${PN}-engineyard-${PV}_amd64.tar.gz )"
 
 LICENSE="Proprietary"
 SLOT="0"
