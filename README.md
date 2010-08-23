@@ -53,7 +53,7 @@ Receiving Updates
 
 To update the Cloudkick Agent for Engine Yard, you will need to first pull in any updates to the overlay, then install any available updates.
 
-    cd /usr/portage/local/
+    cd /usr/portage/local/cloudkick-engineyard
     git pull
     emerge -a cloudkick-agent
 
