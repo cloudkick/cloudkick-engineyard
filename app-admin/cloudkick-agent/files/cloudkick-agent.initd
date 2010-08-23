@@ -1,0 +1,25 @@
+#!/sbin/runscript
+# Copyright 2010 Cloudkick, Inc
+# Distributed under the terms of the Apache License, Version 2.0
+
+depend() {
+    need net
+}
+
+start() {
+    ebegin "Starting cloudkick-agent"
+
+    start-stop-daemon --start --exec $DAEMON --pidfile $PIDFILE \
+        -- $DAEMON_ARGS
+
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping cloudkick-agent"
+
+    start-stop-daemon --stop --exec $DAEMON \
+        --pidfile $PIDFILE
+
+    eend $?
+}
