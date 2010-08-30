@@ -15,7 +15,7 @@ Step 2: Adding the Cloudkick Engine Yard Overlay
 
 Open up /etc/make.conf and add a line to the end:
 
-    PORTDIR_OVERLAYS="${PORTDIR_OVERLAYS}
+    PORTDIR_OVERLAY="${PORTDIR_OVERLAY}
                       /usr/portage/local/cloudkick-engineyard"
 
 Step 3: Installing the Cloudkick Agent
